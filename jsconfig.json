@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "forceConsistentCasingInFileNames": false
+  },
+  "include": [
+    "index.js",
+    "config/**/*.js",
+    "controllers/**/*.js",
+    "middleware/**/*.js",
+    "models/**/*.js",
+    "routes/**/*.js",
+    "teszt.js"
+  ],
+  "exclude": ["node_modules", "Public"]
+}

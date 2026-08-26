@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="profile.page_title">Profil</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/theme.js"></script>
+    <script src="/translations.js"></script>
+    <link rel="stylesheet" href="/profile/profile.css">
+</head>
+<body>
+<a href="/menu/menu.html" class="back-btn" data-i18n="common.back">← Vissza</a>
+<div class="profile-card">
+
+    <div class="profile-header">
+        <button type="button" class="avatar" id="profile-avatar" aria-haspopup="dialog" aria-expanded="false">
+            <span id="profile-avatar-content" class="avatar-content"></span>
+            <span class="avatar-edit-hint" aria-hidden="true">
+                <span class="avatar-edit-hint__text" data-i18n="profile.avatar_hover_edit">Profilkép szerkesztése</span>
+            </span>
+        </button>
+        <div class="profile-titles">
+            <div class="name" id="profile-name" data-i18n="profile.loading">Betöltés…</div>
+            <p class="profile-email" id="profile-email"></p>
+        </div>
+    </div>
+
+    <div class="info-box" id="profile-info">
+        <p><span data-i18n="profile.highscore">Legjobb pontszám: </span><strong id="profile-highscore">—</strong></p>
+        <p id="profile-info-error" class="profile-info-error" hidden role="alert"></p>
+        <section class="run-history" aria-labelledby="profile-run-history-title">
+            <h2 id="profile-run-history-title" class="run-history__heading" data-i18n="profile.run_history_heading">
+                Utolsó futások
+            </h2>
+            <div id="profile-run-list" class="run-history__list"></div>
+            <p id="profile-run-empty" class="run-history__empty" hidden data-i18n="profile.run_history_empty">
+                Még nincs egy futás sem.
+            </p>
+        </section>
+    </div>
+
+</div>
+
+<script src="/shared/avatarTheme.js"></script>
+<script src="/profile/profile.js"></script>
+</body>
+</html>

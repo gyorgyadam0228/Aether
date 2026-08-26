@@ -1,0 +1,118 @@
+/**
+ * Global theming: html[data-theme="dark"] | html[data-theme="light"]
+ * Light palette: #edf2fb #e2eafc #d7e3fc #ccdbfd #b6ccfe #abc4ff
+ * Inline script in pages sets data-theme from localStorage.darkMode before paint.
+ */
+
+:root,
+[data-theme="dark"] {
+    --theme-bg-page: #453a49;
+    --theme-bg-page-alt: #4a3b4f;
+    --theme-bg-gradient: linear-gradient(135deg, #191d32 0%, #282f44 100%);
+    --theme-bg-gradient-soft: conic-gradient(from 150deg, #352939, transparent 65%);
+
+    --theme-surface: #243049;
+    --theme-surface-2: #2a2f44;
+    --theme-surface-3: #1b253a;
+    --theme-surface-4: #323752;
+    --theme-surface-glass: rgba(40, 47, 68, 0.8);
+    --theme-surface-chip: rgba(24, 32, 58, 0.92);
+
+    --theme-text: #c28c99;
+    --theme-text-bright: #f3a6b4;
+    --theme-text-soft: #d4a8b2;
+    --theme-text-heading: #e8b8c4;
+    --theme-text-on-accent: #453a49;
+    --theme-text-inverse: #eee;
+
+    --theme-accent: #c28c99;
+    --theme-accent-rgb: 194, 140, 153;
+    --theme-accent-muted: rgba(194, 140, 153, 0.35);
+    --theme-accent-hover-bg: rgba(194, 140, 153, 0.22);
+
+    --theme-border: #394867;
+    --theme-border-soft: #2f3c5f;
+    --theme-row-hover: #2d3b5f;
+
+    --theme-input-bg: #1e2338;
+    --theme-input-text: #f0d0d8;
+    --theme-code-bg: #0f1528;
+
+    --theme-success: #8fd4a8;
+    --theme-focus-ring: rgba(194, 140, 153, 0.35);
+
+    --theme-back-btn-bg: rgba(42, 47, 68, 0.85);
+    --theme-shadow: rgba(0, 0, 0, 0.35);
+
+    /* Leaderboard / buttons pink */
+    --theme-pink-ui: #f3a6b4;
+    --theme-refresh: #f3a6b4;
+
+    /* Game / combat overlays */
+    --theme-mid-rgb: 69, 58, 73;
+    --theme-enemy-rgb: 109, 59, 71;
+    --theme-enemy-light-rgb: 138, 77, 90;
+    --theme-bar-track-rgb: 25, 29, 50;
+    --theme-health-fill-end: #d4a5b0;
+    --theme-accent-gradient-end: #a06d7a;
+    --theme-btn-disabled-gradient: linear-gradient(135deg, #453a49 0%, #282f44 100%);
+    --theme-tooltip-bg: rgba(25, 29, 50, 0.95);
+    --theme-tooltip-fg: #eee;
+    --theme-log-muted: #e88a9a;
+    --theme-log-success: #9dd49d;
+}
+
+[data-theme="light"] {
+    --theme-bg-page: #edf2fb;
+    --theme-bg-page-alt: #e2eafc;
+    --theme-bg-gradient: linear-gradient(145deg, #edf2fb 0%, #e2eafc 40%, #d7e3fc 100%);
+    --theme-bg-gradient-soft: linear-gradient(160deg, #e2eafc 0%, #edf2fb 50%, #d7e3fc 100%);
+
+    --theme-surface: #e2eafc;
+    --theme-surface-2: #d7e3fc;
+    --theme-surface-3: #ccdbfd;
+    --theme-surface-4: #d7e3fc;
+    --theme-surface-glass: rgba(226, 234, 252, 0.92);
+    --theme-surface-chip: rgba(237, 242, 251, 0.95);
+
+    --theme-text: #1e293b;
+    --theme-text-bright: #0f172a;
+    --theme-text-soft: #475569;
+    --theme-text-heading: #0f172a;
+    --theme-text-on-accent: #f8fafc;
+    --theme-text-inverse: #1e293b;
+
+    --theme-accent: #5c6bc0;
+    --theme-accent-rgb: 92, 107, 192;
+    --theme-accent-muted: rgba(91, 107, 200, 0.35);
+    --theme-accent-hover-bg: rgba(171, 196, 255, 0.45);
+
+    --theme-border: #b6ccfe;
+    --theme-border-soft: #ccdbfd;
+    --theme-row-hover: rgba(182, 204, 254, 0.45);
+
+    --theme-input-bg: #ffffff;
+    --theme-input-text: #1e293b;
+    --theme-code-bg: #e2eafc;
+
+    --theme-success: #15803d;
+    --theme-focus-ring: rgba(91, 107, 200, 0.35);
+
+    --theme-back-btn-bg: rgba(237, 242, 251, 0.92);
+    --theme-shadow: rgba(15, 23, 42, 0.08);
+
+    --theme-pink-ui: #5c6bc0;
+    --theme-refresh: #abc4ff;
+
+    --theme-mid-rgb: 148, 163, 184;
+    --theme-enemy-rgb: 127, 29, 29;
+    --theme-enemy-light-rgb: 185, 28, 28;
+    --theme-bar-track-rgb: 203, 213, 225;
+    --theme-health-fill-end: #abc4ff;
+    --theme-accent-gradient-end: #7e8edb;
+    --theme-btn-disabled-gradient: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
+    --theme-tooltip-bg: rgba(30, 41, 59, 0.96);
+    --theme-tooltip-fg: #f1f5f9;
+    --theme-log-muted: #b91c1c;
+    --theme-log-success: #15803d;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="leaderboard.page_title">Ranglista</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/theme.js"></script>
+    <script src="/translations.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/leaderboard/leaderboard.css">
+</head>
+<body>
+<a href="/menu/menu.html" class="back-btn" data-i18n="common.back">← Vissza</a>
+<div class="container">
+
+    <h2 data-i18n="leaderboard.title">Legjobb pontszámok</h2>
+
+    <button type="button" onclick="loadLeaderboard()" class="refresh" data-i18n="leaderboard.update">
+        Frissítés
+    </button>
+
+    <div class="leaderboard">
+
+        <div class="table-header">
+            <span data-i18n="leaderboard.rank">Helyezés</span>
+            <span data-i18n="leaderboard.name">Név</span>
+            <span data-i18n="leaderboard.score">Pontszám</span>
+        </div>
+
+        <div class="table-body" id="tableBody" data-i18n="leaderboard.loading">Betöltés…</div>
+
+    </div>
+
+</div>
+
+<script src="/leaderboard/leaderboard.js"></script>
+</body>
+</html>

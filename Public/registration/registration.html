@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="registration.title">Regisztráció</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/theme.js"></script>
+    <script src="/translations.js"></script>
+    <link rel="stylesheet" href="/registration/registration.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 data-i18n="registration.title">Regisztráció</h2>
+        <form id="registerForm">
+            <input id="name" name="name" type="text" data-i18n-placeholder="registration.placeholder_name" placeholder="Név" required>
+            <input id="email" name="email" type="email" data-i18n-placeholder="registration.placeholder_email" placeholder="E-mail" required>
+            <input id="password" name="password" type="password" data-i18n-placeholder="registration.placeholder_password" placeholder="Jelszó" required>
+            <button type="submit" data-i18n="registration.registration">Regisztráció</button>
+        </form>
+        <p id="message"></p>
+
+        <a href="/login/login.html" class="login-link" data-i18n="registration.tologin">Már van fiókom / Bejelentkezés</a>
+    </div>
+
+    <script src="/registration/registration.js"></script>
+</body>
+</html>

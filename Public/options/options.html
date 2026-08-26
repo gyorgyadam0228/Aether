@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="options.title">Beállítások</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/theme.js"></script>
+    <script src="/translations.js"></script>
+    <link rel="stylesheet" href="/options/options.css">
+    <link rel="stylesheet" href="/profileHeader/profileHeader.css">
+</head>
+
+<body>
+
+<a href="/menu/menu.html" class="back-btn" data-i18n="common.back">← Vissza</a>
+
+<div class="settings">
+    <h1 class="settings-title" data-i18n="options.title">Beállítások</h1>
+
+    <p id="options-message" class="options-message" aria-live="polite"></p>
+
+    <div class="setting-row">
+        <span data-i18n="options.anonymity_setting">Anonimitás</span>
+        <input type="checkbox" id="anonymity" data-i18n-title="options.anonymity_checkbox_title" title="A ranglistán ne jelenjen meg a neved">
+    </div>
+
+    <div class="setting-row">
+        <span data-i18n="options.theme_setting">Téma</span>
+        <label class="switch">
+            <input type="checkbox" id="tema" data-i18n-title="options.theme_dark_title" title="Sötét mód">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="setting-row">
+        <span data-i18n="options.language_setting">Nyelv</span>
+        <select id="language">
+            <option value="hu" data-i18n="options.language_hu">Magyar</option>
+            <option value="en" data-i18n="options.language_en">English</option>
+        </select>
+    </div>
+
+    <div class="save-container">
+        <button type="button" class="save-btn" onclick="saveSettings()" data-i18n="options.save">Mentés</button>
+    </div>
+
+</div>
+
+<script src="/options/options.js"></script>
+<script src="/shared/avatarTheme.js"></script>
+<script src="/profileHeader/profileHeader.js"></script>
+</body>
+</html>

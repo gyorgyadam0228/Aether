@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="login.title">Bejelentkezés</title>
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/theme.css">
+<script src="/theme.js"></script>
+<script src="/translations.js"></script>
+<link rel="stylesheet" href="/login/login.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2 data-i18n="login.title">Bejelentkezés</h2>
+    <form id="loginForm">
+        <input id="email" name="email" type="email" data-i18n-placeholder="login.placeholder_email" placeholder="E-mail" required>
+        <input id="password" name="password" type="password" data-i18n-placeholder="login.placeholder_password" placeholder="Jelszó" required>
+        <input type="submit" data-i18n-value="login.login" value="Bejelentkezés">
+    </form>
+
+    <p id="message"></p>
+
+    <a href="/registration/registration.html" data-i18n="login.toregistration">Még nincs fiókom</a>
+</div>
+
+<script src="/login/login.js"></script>
+</body>
+</html>

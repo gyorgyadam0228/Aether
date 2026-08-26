@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="common.app_name">Aether</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/theme.css">
+    <script src="/theme.js"></script>
+    <script src="/translations.js"></script>
+    <link rel="stylesheet" href="/game/game.css">
+    <link rel="stylesheet" href="/profileHeader/profileHeader.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-layout">
+            <div class="score-display">
+                <span><span data-i18n="game.score_label">Pont:</span> <span id="score">0</span></span>
+            </div>
+            <div class="game-area">
+                <div id="game-screen" class="screen">
+                    <div class="game-screen-main">
+                        <div class="combat-layout">
+                            <div class="character-stats player-stats">
+                                <h3 id="player-name"></h3>
+                                <div class="stat-bar">
+                                    <label data-i18n="game.hp">HP</label>
+                                    <div class="bar health-bar">
+                                        <div class="bar-fill health-fill" id="player-health-bar"></div>
+                                        <span class="bar-text" id="player-health-text">100/100</span>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <label data-i18n="game.mp">MP</label>
+                                    <div class="bar mana-bar">
+                                        <div class="bar-fill mana-fill" id="player-mana-bar"></div>
+                                        <span class="bar-text" id="player-mana-text">50/50</span>
+                                    </div>
+                                </div>
+                                <div class="status-effects" id="player-status-effects"></div>
+                            </div>
+
+                            <div class="combat-area">
+                                <div class="character-panel enemy-panel">
+                                    <div class="character-display" id="enemy-display">👹</div>
+                                </div>
+
+                                <div class="character-panel player-panel">
+                                    <div class="character-display" id="player-display">☀️</div>
+                                </div>
+                            </div>
+
+                            <div class="character-stats enemy-stats">
+                                <h3 id="enemy-name">Enemy</h3>
+                                <div class="stat-bar">
+                                    <label data-i18n="game.hp">HP</label>
+                                    <div class="bar health-bar">
+                                        <div class="bar-fill health-fill" id="enemy-health-bar"></div>
+                                        <span class="bar-text" id="enemy-health-text">50/50</span>
+                                    </div>
+                                </div>
+                                <div class="status-effects" id="enemy-status-effects"></div>
+                            </div>
+                        </div>
+
+                        <div class="combat-log">
+                            <div id="log-container"></div>
+                        </div>
+
+                        <div class="abilities-panel">
+                            <div id="abilities-container" class="abilities-grid"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" id="surrender-btn" data-i18n="game.surrender">Feladás</button>
+                    </div>
+                </div>
+
+                <div id="game-over" class="screen hidden">
+                    <h2 data-i18n="game.game_over">Játék vége!</h2>
+                    <p><span data-i18n="game.final_score">Végső pontszám:</span> <span id="final-score">0</span></p>
+                    <p><span data-i18n="game.enemies_defeated">Legyőzött ellenfelek:</span> <span id="final-enemies">0</span></p>
+                    <p id="game-over-save-status" class="game-over-save-status" hidden></p>
+                    <div class="game-over-actions">
+                        <button type="button" id="game-over-menu-btn" class="game-over-btn game-over-btn--menu" data-i18n="game.return_menu">Főmenü</button>
+                        <button type="button" id="game-over-save-btn" class="game-over-btn game-over-btn--save" data-i18n="game.save_return">Mentés és kilépés</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/shared/avatarTheme.js"></script>
+    <script src="/profileHeader/profileHeader.js"></script>
+    <script src="/game/characterIcon.js"></script>
+    <script src="/game/game.js"></script>
+</body>
+</html>
