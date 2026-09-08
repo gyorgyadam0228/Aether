@@ -1,3 +1,78 @@
+# EN
+
+## Aether
+
+Final exam project
+
+Web-based, turn-based RPG: character-/class selection, battle/ability mechanics, profile and leaderboard
+
+### Content
+
+- Registration and Login (JWT)
+- Character-/Class selection and turn-based battle logic (HP / MP, status effects)
+- Leaderboard, profile (Highscore, Recent runs, avatar theme)
+- Settings: Language (HU/EN), dark/light theme, anonimity on the leaderboard
+
+### Tech
+
+Node.js, Express, Supabase, bcrypt, JSON Web Token. Game data (character/class data, ability data, enemy data) from Supabase
+
+### (How to) run
+
+Required: Node.js, npm, and the Supabase project
+
+```bash
+git clone https://github.com/gyorgyadam0228/Aether.git
+cd Aether
+npm install
+```
+
+Create a `.env` file in the root (don't commit):
+
+```
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+JWT_SECRET=
+```
+
+```bash
+npm start
+```
+
+Open in browser: [http://localhost:3000](http://localhost:3000) — to enter the login page
+
+For development: `npm run dev` (nodemon).
+
+### Folder summary
+
+```
+Public/         # frontend (login, main menu, game, profile, leaderboard)
+routes/         # API endpoints
+controllers/    # core logic
+models/         # Supabase queries
+config/         # Supabase client
+middleware/     # JWT authentication
+index.js        # server, static files, port 3000
+```
+
+### Variables
+
+| Variable | Role |
+|---|---|
+| `SUPABASE_URL` | Supabase project URL |
+| `SUPABASE_ANON_KEY` | public (anon) key |
+| `SUPABASE_SERVICE_ROLE_KEY` | server-side key — never in the frontend |
+| `JWT_SECRET` | token signature |
+
+The service role key should only be stored on the Node server. A `.env` a `.gitignore`-ban van.
+
+### License
+
+School project
+
+
+
 # HU
 
 ## Aether
