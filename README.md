@@ -13,7 +13,7 @@ Böngészős, körökre osztott RPG: karakterválasztás, harc képességekkel, 
 
 ## Tech
 
-Node.js, Express, Supabase, bcrypt, JSON Web Token. A játékadatok (osztályok, képességek, ellenfelek) a Supabase-ből jönnek.
+Node.js, Express, Supabase, bcrypt, JSON Web Token. A játékadatok (karakterek, képességek, ellenfelek) a Supabase-ből jönnek.
 
 ## Futtatás
 
