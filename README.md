@@ -1,21 +1,23 @@
-# Aether
+# HU
+
+## Aether
 
 Szakmai vizsga projekt.
 
 Böngészős, körökre osztott RPG: karakterválasztás, harc képességekkel, profil és ranglista.
 
-## Funkciók
+### Funkciók
 
 - Regisztráció és bejelentkezés (JWT)
 - Karakterválasztás és körökre osztott harc (HP / MP, státuszok)
 - Ranglista, profil (legjobb pontszám, utolsó menetek, avatar téma)
 - Beállítások: nyelv (HU/EN), sötét/világos téma, anonimitás a ranglistán
 
-## Tech
+### Tech
 
 Node.js, Express, Supabase, bcrypt, JSON Web Token. A játékadatok (karakterek, képességek, ellenfelek) a Supabase-ből jönnek.
 
-## Futtatás
+### Futtatás
 
 Szükséges: Node.js, npm, és egy feltöltött Supabase projekt.
 
@@ -42,7 +44,7 @@ Nyisd meg: [http://localhost:3000](http://localhost:3000) — belépés a login 
 
 Fejlesztéshez: `npm run dev` (nodemon).
 
-## Mappaáttekintés
+### Mappaáttekintés
 
 ```
 Public/         # frontend (login, menü, játék, profil, ranglista)
@@ -54,7 +56,7 @@ middleware/     # JWT ellenőrzés
 index.js        # szerver, statikus fájlok, port 3000
 ```
 
-## Környezeti változók
+### Környezeti változók
 
 | Változó | Szerep |
 |---|---|
@@ -65,6 +67,6 @@ index.js        # szerver, statikus fájlok, port 3000
 
 A service role kulcs csak a Node szerveren legyen. A `.env` a `.gitignore`-ban van.
 
-## Licenc
+### Licenc
 
 Iskolai vizsgaprojekt.
