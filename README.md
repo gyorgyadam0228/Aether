@@ -4,7 +4,7 @@
 
 Final exam project
 
-Web-based, turn-based RPG: character-/class selection, battle/ability mechanics, profile and leaderboard
+Web-based, turn-based RPG: character-/class selection, battle/ability mechanics, profile and leaderboard (lots of stuff is in hungarian in the code)
 
 ### Content
 
